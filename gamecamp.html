@@ -9,6 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
   <!-- FullPage Snapping-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.css" rel="stylesheet" type="text/css">
 
@@ -16,7 +17,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
   <!--<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> -->
 
   <link rel="stylesheet" href="styles/jumbotron.css">
@@ -31,6 +32,9 @@
   <link rel="stylesheet" href="styles/typed-cursor.css">
   <!--<link rel="stylesheet" href="styles/icon-bounce.css">-->
   <link rel="stylesheet" href="styles/table-hover.css">
+  <link rel="stylesheet" href="styles/fullpage.css">
+  <link rel="stylesheet" href="styles/scrolling-gallery.css">
+
 
 </head>
 
@@ -138,14 +142,7 @@
         <hr style="background-color:white"> 
       </h1>
 
-        <div class="banner">
-          <div class="typed_wrap">
-            <h4 class="text-center">Games = <span class="typed">Art + Design + Code</span></h4>
-          </div>
-        </div>
-        what are game? Games = ART + DESIGN + CODE
-        Stats: 2 Years! 64 Teams! 128 campers! 156 Games made!
-
+        <!--
         <div class="row">
             <div class="col-sm-4 is-animated">
                 <img class="img-responsive" data-src="https://placeimg.com/300/350/nature">
@@ -160,8 +157,51 @@
                 <button type="button" class="btn btn-lg">A Simple Button</button>
             </div>
         </div>
+      -->
+
+      <table class="table text-center">
+        <tbody>
+          <tr>
+            <td class="bg-primary text-light align-middle">
+              <h1 class="p-0 m-0" id="about-camps">002</h1>Camps
+            </td>
+            <td class="bg-success text-light align-middle">
+              <h1 class="p-0 m-0" id="about-teams">064</h1>Teams
+            </td>
+            <td class="bg-danger text-light align-middle">
+              <h1 class="p-0 m-0" id="about-campers">128</h1> Campers
+            </td>
+            <td class="bg-warning text-light align-middle">
+              <h1 class="p-0 m-0" id="about-games">156</h1> Games
+            </td>
+          </tr>
 <!--end of row-->
+      </tbody>
+    </table>
+
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-user-friends fa-3x"></i> 
+        </div>
+        <div "card-body">
+          Campers paired into 2 person teams (studios)
+        </div>
+      </div>
     </div>
+
+    Camp details:
+    campers paired into 2 person teams
+    camp last 5 days. typically 9-330
+    5 hours of activities a day
+    combination of digital art creation, level design, coding
+    campers code 100% of the games they make
+    Taught by faculty/staff from UNO CSCI
+    Coaches assist and are UNO csci students
+    campers learn skills used inindustry 
+    campers learn real technologies for building 2d web games
+
+
 
     <!--
     <h2>About</h2>
@@ -261,6 +301,13 @@
            <li>learn to model game world and interctions with math</li>
             <li>look at news articles to express more about learning objectives</li>
       </ul>
+
+      <div class="banner">
+          <div class="typed_wrap">
+            <h4 class="text-center">Games = <span class="typed">Art + Design + Code</span></h4>
+          </div>
+        </div>
+        what are game? Games = ART + DESIGN + CODE
   
    <!-- <div class="scene scene--card">
       <div class="flipcard">
@@ -327,11 +374,50 @@
 
 <!-- begin section -->
 
-<div class="section fifth container mt-4">
-  <h1 class="display-4 text-center">
-    Game Gallery
-    <hr style="background-color:white"> 
-  </h1>
+<div class="section mt-4" id="section5">
+  <div class="container">
+    <h1 class="display-4 text-center text-light">
+      Game Gallery
+      <hr style="background-color:white"> 
+    </h1>
+  </div>
+
+  <!--
+  have montage image with screens of multiple games, click to open gallery page.
+  the montage is animated with multple games playing
+  <ul>
+    <li>All Games</li>
+    <li>Upward Bound 2018</li>
+    <li>St Tammany 2018</li>
+    <li>Core Element 2018</li>
+    <li>St Tammany 2017</li>
+    <li>Core Element 2017</li>
+  </ul>-->
+  <div class="container text-center">
+    <p class="text-light mt-2 mb-1"><i><small>Over 64 Studios & 156 Playable Games</small></i></p>
+  </div>
+  <div class="text-center container-fluid game-slideshow">
+    <!--
+    <img class="img-fluid mb-2" src="media/gamegallery-showcase-all.gif" style="max-height:400px !important; width:100% !important">
+    -->
+    <div class="mover-1">
+    </div>
+    <div class="mover-2">
+    </div>
+  </div>
+  <div class="text-center container mt-3">
+    <a href="https://scalemailted.github.io/outreach-game-gallery/index.html" target="_blank" >
+      <img class="img-fluid" src="media/button-playnow.png" onmouseover="this.src='media/button-playnow-hover.png';" onmouseout="this.src='media/button-playnow.png';"/>
+    </a>
+  </div>
+</div>
+
+
+  <!--
+  <div class="embed-responsive embed-responsive-1by1">
+    <iframe class="embed-responsive-item" src="https://scalemailted.github.io/outreach-game-gallery/index.html" allowfullscreen></iframe>
+  </div>
+  -->
 
 <!--
 <div class="bg-dark text-white pt-2"><h4 class="text-center">Art + Design + Code = Games!</h4>
@@ -366,8 +452,9 @@
    </tbody>
 </table> </div>-->
 
-
+<!--
 </div>
+-->
 
 
 <!-- end section -->
@@ -564,6 +651,7 @@
     <script  src="https://cdn.bootcss.com/typed.js/2.0.7/typed.min.js"></script>
     <script  src="scripts/typed-text.js"></script>
     <script  src="scripts/flipover.js"></script>
+    <script  src="scripts/increment-counter.js"></script>
 
     <script>
       /*new fullpage('#fullpage', {
@@ -581,19 +669,34 @@
 
     <script> $(document).ready(function() { $('video').each((i,v) => { $(v).attr('data-keepplaying', ''); v.play(); });  }); </script> 
 
+    <!--
+    <script>
+      function fp_nav_color(color)
+      {
+        var fp_nav = document.getElementById('fp-nav');
+        var ul = fp_nav.childNodes[0];
+        for (li of ul.childNodes)
+        {
+          li.childNodes[0].childNodes[0].style = 'background: '+color;
+        }
+        console.log("fp_nav_color")
+      }
+    </script>
+  -->
+
     <script>
       (function($) {
         
         'use strict';
 
         // variables
-        var $isAnimatedSecond = $('.second .is-animated'),
+        //var $isAnimatedSecond = $('.second .is-animated');
             //$isAnimatedSecondSingle = $('.second .is-animated__single'),
-            $isAnimatedThird = $('.third .is-animated')//,
+        var $isAnimatedThird = $('.third .is-animated')//,
             //$isAnimatedThirdSingle = $('.third .is-animated__single'),
             //$isAnimatedFourth = $('.fourth .is-animated'),
             //$isAnimatedFourthSingle = $('.fourth .is-animated__single');
-            console.log($isAnimatedSecond)
+            //console.log($isAnimatedSecond)
 
         // initialize fullPage
         $('#fullpage').fullpage({
@@ -621,10 +724,11 @@
             // first animation
             if( index.index == 0 && nextIndex.index == 1 ) { 
               typed_text();
-              $isAnimatedSecond.addClass('animated fadeInUpBig'); 
-              $isAnimatedSecond.eq(0).css('animation-delay', '.3s');
-              $isAnimatedSecond.eq(1).css('animation-delay', '.6s');
-              $isAnimatedSecond.eq(2).css('animation-delay', '.9s');
+              increment_stats();
+              //$isAnimatedSecond.addClass('animated fadeInUpBig'); 
+              //$isAnimatedSecond.eq(0).css('animation-delay', '.3s');
+              //$isAnimatedSecond.eq(1).css('animation-delay', '.6s');
+              //$isAnimatedSecond.eq(2).css('animation-delay', '.9s');
               //console.log($isAnimatedSecond)
               //$isAnimatedSecondSingle.addClass('animated rollIn').css('animation-delay', '1.7s');
             }
@@ -652,7 +756,6 @@
               //$isAnimatedThird.eq(1).addClass('animated fadeInLeftBig').css('animation-delay', '.6s');
               //$isAnimatedThirdSingle.addClass('animated bounceInDown').css('animation-delay', '1.2s');
             }
-
             
            /**
             * use the following condition:
