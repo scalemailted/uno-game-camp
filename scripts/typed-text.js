@@ -4,19 +4,25 @@
 var about_typed;
 var tech_typed;
 
-function typed_text()
+function typed_learning()
 {
   var options = {
     //strings: ["Art.", "Design.", "Code.", "Games.", "Art + Design + Code = Games"],
-    strings: ["Art + Design + Code","???","Art?","Design?", "Code?", "Art + Design + Code "],
+    //strings: ["Art + Design + Code","???","Art?","Design?", "Code?", "Art + Design + Code "],
+    strings: [  " ",
+                "Games = <span class='text-danger'>Art?</span>",
+                "Games = <span class='text-success'>Design?</span>", 
+                "Games = <span class='text-primary'>Code?</span>",  
+                "Games = <span class='text-danger'>Art</span> + <span class='text-success'>Design</span> + <span class='text-primary'>Code</span>"],
     typeSpeed: 80,
-    backSpeed: 40,
+    backSpeed: 80,
     backDelay: 500,
-    startDelay: 2000,
+    startDelay: 1500,
+    contentType: 'html'
   }
 
   if (!about_typed) 
-    about_typed = new Typed(".typed", options);
+    about_typed = new Typed(".typed-learning", options);
 }
 
 function typed_technology()
